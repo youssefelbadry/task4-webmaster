@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+.header {
+  background-color: #0056b3;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: white;
+}
+/* Nav Bar */
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+/* POSTS */
+.post {
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+.post p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.post button {
+  border: 0;
+  margin-top: 15px;
+  font-weight: 600;
+}
+/* SideBar */
+.sidebar {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  margin-bottom: 30px;
+}
+.sidebar:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.sidebar h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+.sidebar p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar ul li {
+  margin-bottom: 15px;
+  padding-bottom: 0;
+}
+.sidebar li a {
+  text-decoration: none;
+  color: #0056b3;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.sidebar li a:hover {
+  text-decoration: underline;
+  
+}
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 25px;
+  text-align: center;
+
+  border-top: 3px solid #0056b3;
+}
+.footer p {
+  font-size: 1rem;
+}
